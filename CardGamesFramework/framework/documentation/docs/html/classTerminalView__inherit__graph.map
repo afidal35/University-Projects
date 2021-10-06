@@ -1,0 +1,4 @@
+<map id="TerminalView" name="TerminalView">
+<area shape="rect" id="node1" title="A Terminal view provided by our framework." alt="" coords="5,483,209,956"/>
+<area shape="rect" id="node2" href="$classView.html" title="The abstract View class representing the View of our Model (Game) View Controller pattern." alt="" coords="5,5,209,435"/>
+</map>

@@ -1,0 +1,28 @@
+var classView =
+[
+    [ "~view", "classView.html#ad0f3ade04bca4e74b8868e63729bad86", null ],
+    [ "displayFromModel", "classView.html#a6979e6ad919cfa3c0c80d7646f04d0be", null ],
+    [ "displayPreamble", "classView.html#aced91bfde838c7c8bce52fae9a9844d6", null ],
+    [ "askNumberOfPlayers", "classView.html#a01f5868765f6ab8117dbcef9081f4d9b", null ],
+    [ "askPlayersNames", "classView.html#a91ed009a7378710400c04b80fd87d255", null ],
+    [ "askNumberOfPointsToWin", "classView.html#a028fdc19c72813a75f44ce7d5a30e1f2", null ],
+    [ "displayFirstPlayer", "classView.html#a005070d28ab08e9dbdd300485d457a2c", null ],
+    [ "askCardIndex", "classView.html#aa534e689074ef3a8fb616ab59b4f1cb9", null ],
+    [ "showCardPlayed", "classView.html#a5e58030f865c96e43f3bce1f247ae75d", null ],
+    [ "showFirstCard", "classView.html#a445c4b03a68040c8f72e5e15e331002b", null ],
+    [ "announcePlayerTurn", "classView.html#aa6ede7907076eb08aed5ab96608ee737", null ],
+    [ "announceWinnerOfTurn", "classView.html#a75c6f49b9a845e2a47e4886f470d1b01", null ],
+    [ "announceForcedToDraw", "classView.html#a6617ba72be7f14dca81d198cd7b59827", null ],
+    [ "announceForcedToSkipTurn", "classView.html#a7180bf0f0123f182c2aec241ae835582", null ],
+    [ "announceInvalidMove", "classView.html#a6eb6b23a18cbe94868159061e384cb73", null ],
+    [ "announceNoWinner", "classView.html#aa2ee23e67da7b2145c1149864d872010", null ],
+    [ "announceWinnerOfRound", "classView.html#ac1a991863b861f114771c64ad4339fc7", null ],
+    [ "announceWinnerOfGame", "classView.html#aee454d58d8c990735814c3e71924baf8", null ],
+    [ "announceCardEffect", "classView.html#aa49c7b1192b565cd300c33d921dc95db", null ],
+    [ "playAgain", "classView.html#a206fb734c62cbd98cc5732239177b7b8", null ],
+    [ "playNextTurn", "classView.html#ac2df5f292780d0a2b907ea9f16485590", null ],
+    [ "playNextRound", "classView.html#a891f95932f360eba47da2165aa8227b3", null ],
+    [ "wantToCut", "classView.html#a1ab5a48c5b3bdbfb64e807bcd5b0aca5", null ],
+    [ "askForCut", "classView.html#ad110000528a0a529753d0d2acafe94dc", null ],
+    [ "showCutPlayed", "classView.html#a7ad57e30f2b0e557b9be4f9b7a56947a", null ]
+];

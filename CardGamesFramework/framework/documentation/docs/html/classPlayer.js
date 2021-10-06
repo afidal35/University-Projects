@@ -1,0 +1,26 @@
+var classPlayer =
+[
+    [ "Player", "classPlayer.html#a5c257667b40234b182404e3055bb008e", null ],
+    [ "~Player", "classPlayer.html#a11017c0ed8a639f3b1308ab167fbeca2", null ],
+    [ "getName", "classPlayer.html#a4939193fc637f75bf7a11118334dae7e", null ],
+    [ "getPoints", "classPlayer.html#a758a4b0a5111ed7e989fd4dc301f542a", null ],
+    [ "setPoints", "classPlayer.html#ae46b7cfe966bcc92849caad24f47b784", null ],
+    [ "drawCard", "classPlayer.html#a439b6a2ab8b35a015b79a2441e4d163f", null ],
+    [ "playCardFromPos", "classPlayer.html#ae6f8dc6494ae5828c9132ae8baea3887", null ],
+    [ "getCardFromPos", "classPlayer.html#a35db8ccc602e83b4df389fe81258bbb5", null ],
+    [ "drawCardBegin", "classPlayer.html#a960cb2ec449d1f2b4a82ba7981af0fca", null ],
+    [ "playBackCard", "classPlayer.html#afdc27822c3e17e89c774094d5976d2ef", null ],
+    [ "getHand", "classPlayer.html#aaaed0c79fb3acfa9d5e5c8168d4f7435", null ],
+    [ "getStack", "classPlayer.html#adaad954a28e83bd27bf4b9a333321a43", null ],
+    [ "addToStack", "classPlayer.html#afb1a8831c0a250bc0193b8145a729c26", null ],
+    [ "isHandEmpty", "classPlayer.html#a6229d9c4d771fa40c4171b1e8b91b9e8", null ],
+    [ "getHandSize", "classPlayer.html#a349e345c332c57d681982ce06a1ba7e9", null ],
+    [ "getStackSize", "classPlayer.html#acbc75a4d0b15b295fa98533ff565fb6a", null ],
+    [ "isAIPlayer", "classPlayer.html#a421e978955b2446570fbaea1911688e9", null ],
+    [ "operator<<", "classPlayer.html#a17ae887e285346988c33e45f9b9d9389", null ],
+    [ "stack", "classPlayer.html#a8148afe9d9355232168b6e2133ea0e71", null ],
+    [ "hand", "classPlayer.html#a50e2807ec165513ccba9fac22b35e453", null ],
+    [ "name", "classPlayer.html#acf0355128a99ee20ad9931b760fb2de1", null ],
+    [ "isAI", "classPlayer.html#ae9c8c98b632c602b1ab4c66d9eceeb41", null ],
+    [ "points", "classPlayer.html#adf0398ea8c1f29175204508ab642b64e", null ]
+];

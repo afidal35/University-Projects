@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Bouml (http://bouml.free.fr/) -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="1575" height="1028" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="793" y="201" width="2" height="534" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="577" y="733" width="218" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="574" y="198" width="219" height="535" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" font-style="italic" text-anchor="middle" x="684" y="207">Game</text>
+	<line stroke="black" stroke-opacity="1" x1="574" y1="208" x2="793" y2="208" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="217">#</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="217">playerIndex : int=  0</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="226">#</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="226">numberOfPlayers : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="235">#</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="235">numberOfPointsToWin : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="244">#</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="244">numberOfRoundsPlayed : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="253">#</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="253">start : bool=  true</text>
+	<line stroke="black" stroke-opacity="1" x1="574" y1="254" x2="793" y2="254" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="263">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="263">~Game()</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="272">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="272">clearGame() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="281">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="281">resetGame() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="290">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="586" y="290">getMaxPlayers() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="299">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="586" y="299">createDeck() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="308">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="586" y="308">getCurrentPlayerValidMove() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="317">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="586" y="317">howToDeal() : std::pair&lt;int,int&gt;</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="326">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="326">getMinPlayers() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="335">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="335">getGameHeader() : string</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="344">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="344">evaluateWinnerOfRound() : Player</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="353">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="353">evaluateWinnerOfGame() : Player</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="362">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="362">isCardChoosable() : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="371">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="371">isMoveValid(in card : Card) : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="380">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="380">calculatePointsForWinner(inout winner : Player) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="389">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="389">getCardEffect(in card : Card) : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="398">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="398">needFirstCardEffect() : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="407">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="407">showTable() : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="416">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="416">isCutValid(in cut : std::tuple&lt;int,int,int&gt;) : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="425">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="425">getValidCut() : std::tuple&lt;int,int,int&gt;</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="434">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="434">isAbleToCut() : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="443">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="443">shuffleDeck() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="452">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="452">evaluateTurn() : Player</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="461">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="461">evaluationTurnCondition() : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="470">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="470">chooseColor() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="479">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="479">getPlayerIndex() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="488">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="488">setPlayerIndex(in x : int) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="497">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="497">setPlayers(inout names : vector&lt;string&gt;, in b : bool) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="506">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="506">getPlayers() : vector&lt;Player*&gt;</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="515">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="515">getStart() : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="524">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="524">setStart(in b : bool) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="533">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="533">getNumberOfPlayers() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="542">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="542">setNumberOfPlayers(in x : int) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="551">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="551">getNumberOfPointsToWin() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="560">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="560">setNumberOfPointsToWin(in points : int) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="569">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="569">getNumberOfRoundsPlayed() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="578">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="578">setNumberOfRoundsPlayed(in round : int) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="587">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="587">getDeck() : CardBundle</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="596">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="596">getTable() : CardBundle</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="605">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="605">getLastCardPlayed() : Card</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="614">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="614">getCurrentPlayer() : Player</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="623">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="623">playerPlayCardFromPos(in n : int) : Card</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="632">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="632">addToCurrentPlayerStack(in card : Card) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="641">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="641">addToTable(in card : Card) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="650">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="650">getCardFromTable(in pos : int) : Card</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="659">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="659">removeCardFromTable(in pos : int) : Card</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="668">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="668">makeCurrentPlayerDraw(in n : int) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="677">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="677">callLastCardEffect() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="686">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="686">dealCardsAndSetTable() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="695">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="695">nextTurn() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="704">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="704">skipTurn() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="713">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="713">drawTwo() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="722">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="722">drawFour() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="577" y="731">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="586" y="731">reverse() : int</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1560" y="487" width="2" height="258" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1168" y="743" width="394" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="1165" y="484" width="395" height="259" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="1363" y="493">TerminalView</text>
+	<line stroke="black" stroke-opacity="1" x1="1165" y1="494" x2="1560" y2="494" />
+	<line stroke="black" stroke-opacity="1" x1="1165" y1="499" x2="1560" y2="499" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="508">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="508">askForIntegerAnswer(in question : string, in min : int, in max : int) : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="517">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="517">displayGameHeader(in s : string) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="526">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="526">displayPreamble() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="535">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="535">askNumberOfPlayers(in min : int, in max : int, in b : bool) : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="544">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="544">askPlayersNames(in size : int, in b : bool) : vector&lt;string&gt;</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="553">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="553">askNumberOfPointsToWin() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="562">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="562">askCardIndex(in b : bool, in c : bool, inout p : Player, inout table : CardBundle, inout deck : CardBundle) : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="571">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="571">showCard(in card : Card, in message : string) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="580">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="580">showCardPlayed(in card : Card) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="589">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="589">showFirstCard(in card : Card) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="598">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="598">announceWithPlayer(inout p : Player, in message_1 : string, in message_2 : string) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="607">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="607">announcePlayerTurn(inout p : Player) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="616">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="616">announceWinnerOfTurn(inout p : Player) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="625">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="625">announceForcedToDraw(inout p : Player) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="634">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="634">announceForcedToDrawAgain(inout p : Player) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="643">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="643">announce(in message : string) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="652">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="652">announceInvalidMove() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="661">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="661">announceNoWinner() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="670">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="670">playAgain() : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="679">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="679">playNextTurn() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="688">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="688">playNextRound() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="697">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="697">announceWinnerOfRound(inout winner : Player, in players : vector&lt;Player*&gt;) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="706">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="706">announceWinnerOfGame(inout winner : Player, in players : vector&lt;Player*&gt;) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="715">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="715">announceCardEffect(in n : int, in isAI : bool) : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="724">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="724">showCutPlayed(inout p : Player, inout table : CardBundle, in cut : std::tuple&lt;int,int,int&gt;) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="733">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="733">askForCut(inout p : Player, inout table : CardBundle) : tuple&lt;int,int,int&gt;</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1168" y="742">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1177" y="742">wantToCut(inout p : Player, inout cb : CardBundle) : bool</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="574" y="48" width="2" height="88" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="278" y="134" width="298" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="275" y="45" width="299" height="89" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="425" y="54">Helpers</text>
+	<line stroke="black" stroke-opacity="1" x1="275" y1="55" x2="574" y2="55" />
+	<line stroke="black" stroke-opacity="1" x1="275" y1="60" x2="574" y2="60" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="278" y="69">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" text-decoration="underline" x="287" y="69">hasVectorTwoCandidates(inout v : CardBundle, in sum : int) : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="278" y="78">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" text-decoration="underline" x="287" y="78">contains(inout cb : CardBundle, in n : int) : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="278" y="87">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" text-decoration="underline" x="287" y="87">hasMoreCards(in players : vector&lt;Player*&gt;) : Player</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="278" y="96">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" text-decoration="underline" x="287" y="96">hasMoreOfSuit(in players : vector&lt;Player*&gt;, in suit : Suit) : Player</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="278" y="105">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" text-decoration="underline" x="287" y="105">hasCardWithSuit(in players : vector&lt;Player*&gt;, in value : int, in suit : Suit) : Player</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="278" y="114">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" text-decoration="underline" x="287" y="114">morePointsWithFourBestCards(in players : vector&lt;Player*&gt;) : Player</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="278" y="123">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" text-decoration="underline" x="287" y="123">hasMorePoints(in players : vector&lt;Player*&gt;) : Player</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="278" y="132">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" text-decoration="underline" x="287" y="132">bestCardOfSuit(inout cb : CardBundle, in suit : Suit) : int</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="967" y="40" width="2" height="104" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="795" y="142" width="174" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="792" y="37" width="175" height="105" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="880" y="54">Controller</text>
+	<line stroke="black" stroke-opacity="1" x1="792" y1="55" x2="967" y2="55" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="795" y="64">-</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="804" y="64">model : M</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="795" y="73">-</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="804" y="73">view : V</text>
+	<line stroke="black" stroke-opacity="1" x1="792" y1="74" x2="967" y2="74" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="795" y="83">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="804" y="83">Controller()</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="795" y="92">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="804" y="92">~Controller&lt;M,V&gt;()</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="795" y="101">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="804" y="101">run() : void</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="270" y="380" width="2" height="174" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="42" y="552" width="230" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="39" y="377" width="231" height="175" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="155" y="386">Card</text>
+	<line stroke="black" stroke-opacity="1" x1="39" y1="387" x2="270" y2="387" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="42" y="396">#</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="51" y="396">value : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="42" y="405">#</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="51" y="405">points : int</text>
+	<line stroke="black" stroke-opacity="1" x1="39" y1="406" x2="270" y2="406" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="42" y="415">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="51" y="415">~Card()</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="42" y="424">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="51" y="424">Card(in value : int, in color : Color)</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="42" y="433">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="51" y="433">Card(in value : int, in color : Color, in points : int)</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="42" y="442">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="51" y="442">Card(in value : int, in color : Color, in suit : Suit)</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="42" y="451">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="51" y="451">Card(in value : int, in color : Color, in suit : Suit, in points : int)</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="42" y="460">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="51" y="460">operator &lt;(in c : Card) : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="42" y="469">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="51" y="469">operator &gt;(in c : Card) : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="42" y="478">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="51" y="478">operator ==(in c : Card) : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="42" y="487">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="51" y="487">operator +(in card : Card) : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="42" y="496">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="51" y="496">operator &lt;&lt;(inout os : ostream, in card : Card) : ostream</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="42" y="505">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="51" y="505">getValue() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="42" y="514">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="51" y="514">getPoints() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="42" y="523">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="51" y="523">getColor() : Color</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="42" y="532">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="51" y="532">getSuit() : Suit</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="42" y="541">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="51" y="541">setColor(in c : int) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="42" y="550">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="51" y="550">setColor(in c : Color) : void</text>
+</g>
+<g>
+	<rect fill="white" stroke-dasharray="4,4" stroke="black" stroke-width="1" stroke-opacity="1" x="911" y="30" width="88" height="13" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" text-anchor="middle" x="955" y="41">M, V</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="669" y="900" width="2" height="114" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="453" y="1012" width="218" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="450" y="897" width="219" height="115" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="560" y="906">American8</text>
+	<line stroke="black" stroke-opacity="1" x1="450" y1="907" x2="669" y2="907" />
+	<line stroke="black" stroke-opacity="1" x1="450" y1="912" x2="669" y2="912" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="453" y="921">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="462" y="921">getGameHeader() : string</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="453" y="930">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="462" y="930">getMaxPlayers() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="453" y="939">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="462" y="939">createDeck() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="453" y="948">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="462" y="948">howToDeal() : std::pair&lt;int,int&gt;</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="453" y="957">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="462" y="957">isMoveValid(in card : Card) : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="453" y="966">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="462" y="966">getCurrentPlayerValidMove() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="453" y="975">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" text-decoration="underline" x="462" y="975">equalityComparison(in first : Card, in second : Card) : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="453" y="984">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="462" y="984">chooseColor() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="453" y="993">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="462" y="993">getCardEffect(in card : Card) : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="453" y="1002">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="462" y="1002">calculatePointsForWinner(inout winner : Player) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="453" y="1011">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="462" y="1011">needFirstCardEffect() : bool</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1121" y="747" width="2" height="106" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="987" y="851" width="136" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="984" y="744" width="137" height="107" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="1053" y="753">Briscola</text>
+	<line stroke="black" stroke-opacity="1" x1="984" y1="754" x2="1121" y2="754" />
+	<line stroke="black" stroke-opacity="1" x1="984" y1="759" x2="1121" y2="759" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="987" y="768">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="996" y="768">getGameHeader() : string</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="987" y="777">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="996" y="777">getMaxPlayers() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="987" y="786">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="996" y="786">createDeck() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="987" y="795">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="996" y="795">howToDeal() : std::pair&lt;int,int&gt;</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="987" y="804">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="996" y="804">isMoveValid(in  : Card) : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="987" y="813">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="996" y="813">getCurrentPlayerValidMove() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="987" y="822">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="996" y="822">showTable() : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="987" y="831">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="996" y="831">evaluateTurn() : Player</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="987" y="840">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="996" y="840">evaluateWinnerOfRound() : Player</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="987" y="849">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="996" y="849">evaluationTurnCondition() : bool</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="905" y="901" width="2" height="114" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="689" y="1013" width="218" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="686" y="898" width="219" height="115" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="796" y="907">Uno</text>
+	<line stroke="black" stroke-opacity="1" x1="686" y1="908" x2="905" y2="908" />
+	<line stroke="black" stroke-opacity="1" x1="686" y1="913" x2="905" y2="913" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="689" y="922">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="698" y="922">getGameHeader() : string</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="689" y="931">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="698" y="931">getMaxPlayers() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="689" y="940">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="698" y="940">createDeck() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="689" y="949">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="698" y="949">howToDeal() : std::pair&lt;int,int&gt;</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="689" y="958">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="698" y="958">isMoveValid(in card : Card) : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="689" y="967">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="698" y="967">getCurrentPlayerValidMove() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="689" y="976">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" text-decoration="underline" x="698" y="976">equalityComparison(in first : Card, in second : Card) : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="689" y="985">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="698" y="985">chooseColor() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="689" y="994">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="698" y="994">getCardEffect(in card : Card) : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="689" y="1003">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="698" y="1003">needFirstCardEffect() : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="689" y="1012">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="698" y="1012">calculatePointsForWinner(inout winner : Player) : void</text>
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="457" y1="137" x2="455" y2="145" />
+	<line stroke="black" stroke-opacity="1" x1="457" y1="137" x2="465" y2="138" />
+	<line stroke-dasharray="4,4" stroke="black" stroke-opacity="1" x1="573" y1="305" x2="457" y2="137" />
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1405" y="213" width="2" height="232" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1013" y="443" width="394" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="1010" y="210" width="395" height="233" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" font-style="italic" text-anchor="middle" x="1208" y="219">View</text>
+	<line stroke="black" stroke-opacity="1" x1="1010" y1="220" x2="1405" y2="220" />
+	<line stroke="black" stroke-opacity="1" x1="1010" y1="225" x2="1405" y2="225" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="234">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="1022" y="234">~View()</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="243">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="243">displayGameHeader(in s : string) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="252">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="252">displayPreamble() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="261">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="261">askNumberOfPlayers(in min : int, in max : int, in b : bool) : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="270">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="270">askPlayersNames(in size : int, in b : bool) : vector&lt;string&gt;</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="279">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="279">askNumberOfPointsToWin() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="288">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="288">askCardIndex(in b : bool, in c : bool, inout p : Player, inout table : CardBundle, inout deck : CardBundle) : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="297">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="297">showCardPlayed(in  : Card) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="306">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="306">showFirstCard(in  : Card) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="315">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="315">announcePlayerTurn(inout p : Player) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="324">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="324">announceWinnerOfTurn(inout p : Player) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="333">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="333">announceForcedToDraw(inout p : Player) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="342">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="342">announceForcedToDrawAgain(inout p : Player) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="351">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="351">announceInvalidMove() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="360">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="360">announceNoWinner() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="369">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="369">announceWinnerOfRound(inout winner : Player, in players : vector&lt;Player*&gt;) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="378">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="378">announceWinnerOfGame(inout winner : Player, in players : vector&lt;Player*&gt;) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="387">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="387">announceCardEffect(in n : int, in isAI : bool) : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="396">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="396">playAgain() : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="405">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="405">playNextTurn() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="414">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="414">playNextRound() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="423">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="423">wantToCut(inout p : Player, inout  : CardBundle) : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="432">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="432">askForCut(inout p : Player, inout  : CardBundle) : tuple&lt;int,int,int&gt;</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="1013" y="441">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-style="italic" x="1022" y="441">showCutPlayed(inout p : Player, inout table : CardBundle, in cut : std::tuple&lt;int,int,int&gt;) : void</text>
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="992" y1="743" x2="800" y2="571" />
+	<line stroke="#000000" stroke-opacity="1" x1="796" y1="567" x2="796" y2="575" />
+	<line stroke="#000000" stroke-opacity="1" x1="796" y1="567" x2="804" y2="566" />
+	<line stroke="#000000" stroke-opacity="1" x1="796" y1="575" x2="804" y2="566" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="783" y1="897" x2="747" y2="741" />
+	<line stroke="#000000" stroke-opacity="1" x1="746" y1="736" x2="741" y2="743" />
+	<line stroke="#000000" stroke-opacity="1" x1="746" y1="736" x2="753" y2="740" />
+	<line stroke="#000000" stroke-opacity="1" x1="741" y1="743" x2="753" y2="740" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="575" y1="896" x2="613" y2="741" />
+	<line stroke="#000000" stroke-opacity="1" x1="615" y1="736" x2="607" y2="740" />
+	<line stroke="#000000" stroke-opacity="1" x1="615" y1="736" x2="619" y2="743" />
+	<line stroke="#000000" stroke-opacity="1" x1="607" y1="740" x2="619" y2="743" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="1291" y1="483" x2="1273" y2="451" />
+	<line stroke="#000000" stroke-opacity="1" x1="1271" y1="446" x2="1268" y2="454" />
+	<line stroke="#000000" stroke-opacity="1" x1="1271" y1="446" x2="1279" y2="448" />
+	<line stroke="#000000" stroke-opacity="1" x1="1268" y1="454" x2="1279" y2="448" />
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="461" y="789" width="2" height="96" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="327" y="883" width="136" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="324" y="786" width="137" height="97" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="393" y="795">War</text>
+	<line stroke="black" stroke-opacity="1" x1="324" y1="796" x2="461" y2="796" />
+	<line stroke="black" stroke-opacity="1" x1="324" y1="801" x2="461" y2="801" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="327" y="810">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="336" y="810">getGameHeader() : string</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="327" y="819">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="336" y="819">getMaxPlayers() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="327" y="828">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="336" y="828">createDeck() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="327" y="837">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="336" y="837">howToDeal() : std::pair&lt;int,int&gt;</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="327" y="846">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="336" y="846">isCardChoosable() : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="327" y="855">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="336" y="855">evaluateTurn() : Player</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="327" y="864">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="336" y="864">evaluateWinnerOfRound() : Player</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="327" y="873">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="336" y="873">getCurrentPlayerValidMove() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="327" y="882">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="336" y="882">evaluationTurnCondition() : bool</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="1108" y="883" width="2" height="132" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="928" y="1013" width="182" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="925" y="880" width="183" height="133" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="1017" y="889">Scopa</text>
+	<line stroke="black" stroke-opacity="1" x1="925" y1="890" x2="1108" y2="890" />
+	<line stroke="black" stroke-opacity="1" x1="925" y1="895" x2="1108" y2="895" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="928" y="904">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="937" y="904">getGameHeader() : string</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="928" y="913">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="937" y="913">getMaxPlayers() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="928" y="922">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="937" y="922">createDeck() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="928" y="931">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="937" y="931">howToDeal() : std::pair&lt;int,int&gt;</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="928" y="940">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="937" y="940">isMoveValid(in card : Card) : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="928" y="949">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="937" y="949">getCurrentPlayerValidMove() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="928" y="958">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="937" y="958">evaluateTurn() : Player</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="928" y="967">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="937" y="967">evaluateWinnerOfRound() : Player</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="928" y="976">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="937" y="976">showTable() : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="928" y="985">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="937" y="985">isCutValid(in move : std::tuple&lt;int,int,int&gt;) : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="928" y="994">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="937" y="994">getValidCut() : std::tuple&lt;int,int,int&gt;</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="928" y="1003">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="937" y="1003">isAbleToCut() : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="928" y="1012">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="937" y="1012">evaluationTurnCondition() : bool</text>
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="970" y1="879" x2="799" y2="633" />
+	<line stroke="#000000" stroke-opacity="1" x1="796" y1="629" x2="794" y2="637" />
+	<line stroke="#000000" stroke-opacity="1" x1="796" y1="629" x2="804" y2="630" />
+	<line stroke="#000000" stroke-opacity="1" x1="794" y1="637" x2="804" y2="630" />
+</g>
+<g>
+	<line stroke="#000000" stroke-opacity="1" x1="432" y1="785" x2="569" y2="608" />
+	<line stroke="#000000" stroke-opacity="1" x1="573" y1="604" x2="564" y2="605" />
+	<line stroke="#000000" stroke-opacity="1" x1="573" y1="604" x2="574" y2="612" />
+	<line stroke="#000000" stroke-opacity="1" x1="564" y1="605" x2="574" y2="612" />
+</g>
+<g>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="437" y="320">#players</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="235" y="567">-bundle</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="434" y="600">#deck</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="434" y="600">#table</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="320" y="605">-stack</text>
+</g>
+<g>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="320" y="605">-hand</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="424" y="154" width="2" height="200" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="204" y="352" width="222" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="201" y="151" width="223" height="201" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="313" y="160">Player</text>
+	<line stroke="black" stroke-opacity="1" x1="201" y1="161" x2="424" y2="161" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="170">-</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="170">name : string</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="179">-</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="179">isAI : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="188">-</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="188">points : int</text>
+	<line stroke="black" stroke-opacity="1" x1="201" y1="189" x2="424" y2="189" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="198">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="198">Player(in n : string, in b : bool)</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="207">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="207">~Player()</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="216">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="216">operator &lt;&lt;(inout os : ostream, in player : Player) : ostream</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="225">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="225">getName() : string</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="234">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="234">getPoints() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="243">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="243">setPoints(in x : int) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="252">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="252">drawCard(in card : Card) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="261">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="261">playCardFromPos(in pos : int) : Card</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="270">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="270">getCardFromPos(in pos : int) : Card</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="279">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="279">drawCardBegin(in card : Card) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="288">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="288">playBackCard() : Card</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="297">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="297">getHand() : CardBundle</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="306">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="306">getStack() : CardBundle</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="315">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="315">addToStack(in card : Card) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="324">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="324">isHandEmpty() : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="333">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="333">getHandSize() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="342">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="342">getStackSize() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="204" y="351">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="213" y="351">isAIPlayer() : bool</text>
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="427" y1="317" x2="429" y2="325" />
+	<line stroke="black" stroke-opacity="1" x1="427" y1="317" x2="435" y2="314" />
+	<line stroke="black" stroke-opacity="1" x1="573" y1="401" x2="427" y2="317" />
+</g>
+<g>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="480" y="367">&lt;&lt;vector&gt;&gt;</text>
+</g>
+<g>
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="424" y="611" width="2" height="124" />
+	<rect fill="#cbcbcb" stroke="none" stroke-opacity="1" x="196" y="733" width="230" height="2" />
+	<rect fill="#ffffc0" stroke="black" stroke-width="1" stroke-opacity="1" x="193" y="608" width="231" height="125" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" text-anchor="middle" x="309" y="617">CardBundle</text>
+	<line stroke="black" stroke-opacity="1" x1="193" y1="618" x2="424" y2="618" />
+	<line stroke="black" stroke-opacity="1" x1="193" y1="623" x2="424" y2="623" />
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="196" y="632">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="205" y="632">operator &lt;&lt;(inout os : ostream, in cd : CardBundle) : ostream</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="196" y="641">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="205" y="641">shuffleDeck() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="196" y="650">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="205" y="650">addBegin(in card : Card) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="196" y="659">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="205" y="659">getCardFromPos(in pos : int) : Card</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="196" y="668">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="205" y="668">playCardPos(in pos : int) : Card</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="196" y="677">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="205" y="677">drawFromBack() : Card</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="196" y="686">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="205" y="686">getBackCard() : Card</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="196" y="695">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="205" y="695">addToBack(in card : Card) : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="196" y="704">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="205" y="704">isEmpty() : bool</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="196" y="713">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="205" y="713">size() : int</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="196" y="722">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="205" y="722">sort() : void</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" font-weight="bold" x="196" y="731">+</text>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="205" y="731">clear() : void</text>
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="222" y1="555" x2="220" y2="563" />
+	<line stroke="black" stroke-opacity="1" x1="222" y1="555" x2="230" y2="556" />
+	<line stroke="black" stroke-opacity="1" x1="261" y1="607" x2="222" y2="555" />
+	<polygon fill="#000000" stroke="black" stroke-opacity="1" points="261,607 252,605 253,597 262,598" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="424" y1="607" x2="432" y2="609" />
+	<line stroke="black" stroke-opacity="1" x1="424" y1="607" x2="426" y2="598" />
+	<line stroke="black" stroke-opacity="1" x1="573" y1="526" x2="424" y2="607" />
+	<polygon fill="#000000" stroke="black" stroke-opacity="1" points="573,526 570,534 562,531 564,523" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="424" y1="607" x2="432" y2="609" />
+	<line stroke="black" stroke-opacity="1" x1="424" y1="607" x2="426" y2="598" />
+	<line stroke="black" stroke-opacity="1" x1="573" y1="526" x2="424" y2="607" />
+	<polygon fill="#000000" stroke="black" stroke-opacity="1" points="573,526 570,534 562,531 564,523" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="310" y1="607" x2="316" y2="601" />
+	<line stroke="black" stroke-opacity="1" x1="310" y1="607" x2="304" y2="600" />
+	<line stroke="black" stroke-opacity="1" x1="313" y1="355" x2="310" y2="607" />
+	<polygon fill="#000000" stroke="black" stroke-opacity="1" points="313,355 318,361 312,366 306,360" />
+</g>
+<g>
+	<line stroke="black" stroke-opacity="1" x1="310" y1="607" x2="316" y2="601" />
+	<line stroke="black" stroke-opacity="1" x1="310" y1="607" x2="304" y2="600" />
+	<line stroke="black" stroke-opacity="1" x1="313" y1="355" x2="310" y2="607" />
+	<polygon fill="#000000" stroke="black" stroke-opacity="1" points="313,355 318,361 312,366 306,360" />
+</g>
+<g>
+	<text font-family="Helvetica" font-size="8" fill="#000000" xml:space="preserve" x="222" y="589">&lt;&lt;vector&gt;&gt;</text>
+</g>
+</svg>
