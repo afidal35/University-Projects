@@ -1,0 +1,19 @@
+image: gcc
+
+stages:
+  - build
+  - test
+
+before_script:
+  - apt-get update && apt-get -y install make autoconf
+
+build:
+  stage: build
+  script:
+    - make
+
+test:
+  stage: test
+  script:
+    - cd tests/
+    - make

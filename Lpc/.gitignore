@@ -1,0 +1,7 @@
+/CMakeLists.txt
+/cmake-build-debug/
+.idea/
+*.out
+build/
+/cmake-build-debug-remote/
+/cmake-build-debug-docker/
