@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>{{ metadata.title }}</title>
+</head>
+<body>
+<h1>This is another template </h1>
+<h1>{{ metadata.title }}</h1>
+<h2>{{ metadata.date }}</h2>
+{% for item in metadata.var1 %}
+<li> {{ item }}</li>
+{% for second_item in metadata.var2 %}
+<li> {{ second_item }}</li>
+{% endfor %}
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="./css/sidebars.css" rel="stylesheet">
+    <title>GLA DOCS</title>
+</head>
+<body style="overflow-y: hidden">
+<div class="row" style="height: 100%">
+    <div class="col-3 col-md-3 text-white bg-dark">
+        <div class="text-white bg-dark p-3" style="">
+            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <span class="fs-4 p-3"><b>GLA Project Docs</b></span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">
+                        Getting Started
+                    </a>
+                </li>
+                <li>
+                    <a href="docs.html" class="nav-link text-white">
+                        Documentation &#x2193;
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        Examples
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://gitlab.com/SawHad/GLA-H" class="nav-link text-white">
+                        Source code
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <p class="p-3">Copyright 2021@GLA-H</p>
+        </div>
+    </div>
+    <div class="col-8 mb-5" style=";overflow-y: auto;height: 100%;">
+        <div class="container me-5">
+            <h1 class="m-5 title"> Getting Started</h1>
+            <div class="row">
+                <div class="col">
+                    <h1 class="m-5">Usage</h1>
+                </div>
+                <div class="col">
+                    <a href="https://gitlab.com/SawHad/GLA-H/-/releases"
+                       class="float-end me-5 btn btn-lg btn-success pe-5 ps-5 pt-3 pb-3">Download</a>
+                </div>
+            </div>
+            <p>
+                SSG is a static web site generator. this project was realized by a <a href="">group of six students</a>
+                during the <i style="color: red">Software Engineering </i> teaching Unit given at the University of
+                Paris.
+                Its use is quite simple:<br>
+
+            </p>
+            <h2 class="m-2">Build your website </h2>
+            <p>You can generate your web site from the target folder or by calling the <i style="color: red">ssg
+                build</i> command with the path of the target folder.
+                The target folder must contain at least one folder with the name <i style="color: red">content</i> and
+                containing all markdown files.
+            </p>
+            <h4 class="m-2">From the current folder </h4>
+            <pre>
+                <code>
+                    iren@mika:-$ cd path_to_website
+                    iren@mika:-$ ssg build
+                </code>
+            </pre>
+            <h4 class="m-2">Pass in parameters the target folder</h4>
+            <p>The <small style="color: red">-i</small> option allows you to specify a folder the path to another target
+                folder other than the current folder.
+                And the <small style="color: red">-o</small> option allows you to specify the output folder </p>
+            <pre>
+                <code>
+                    iren@mika:-$ ssg build -i path_to_website -o output_path
+                </code>
+            </pre>
+            <h2 class="m-2">Launch the server </h2>
+            <p>
+                An http server is integrated in order to easily visualize the results of the compilations.
+                The server is started as follows:
+            </p>
+            <pre>
+                <code>
+                    iren@mika:-$ ssg serve
+                    create _output/static/style.css
+                    HTML file: CommonMark.html on modify.
+                    HTML file: index.html on modify.
+                    File [_output/index.html] has been correctly rendered.
+                    Your site has been correctly updated from [.].
+                    Start watching.
+                    Start watching: ./content
+                    Start watching: ./static
+                    Start watching: ./templates
+                    Start watching: ./themes/mini/templates
+                    Start watching: ./themes/mini/static
+                    Start watching: ./site.toml
+                    ./static-java.nio.file.NoSuchFileException: ./static
+                    Stop watching: ./static
+                    Server started.
+                    Listening for connections on port : 8080 ...
+
+                    Server launch at : http://127.0.0.1:8080
+                    Ctrl + C for exit !
+                </code>
+            </pre>
+
+            <h2 class="m-2">Help Command </h2>
+            <p>
+                When ssg is invoked only, it displays the list of available commands.<br>
+                And to get help on a command, just call ssg help command_name.
+                For example ssg help build.
+            </p>
+            <pre>
+                <code>
+                    iren@mika:-$ ssg
+                    Usage  :
+
+                    Usage: ssg [COMMAND]
+
+                    Description  :
+
+                    Static site generator : transform markdown files into html files to render a
+                    website.
+
+
+                    Commands  :
+
+                      build    Convert markdown files (commonmark spec) into HTML files.
+                               When specified with no options build from the current directory into
+                                 the default output directory [_output].
+
+                      serve    build project and launch it on a HTTP server for seeing the
+                                 compilation's result
+                      help     Displays help information about the specified command
+                      version  Show current app version
+                </code>
+            </pre>
+
+
+            <pre>
+                <code>
+                    iren@mika:-$ ssg help build
+                    Usage:
+
+                    Usage: ssg build [-rw] [--jobs=&lt;jobs&gt;] [-o=&lt;output&gt;] [&lt;file1.html&gt; |
+                            [-i=&lt;input&gt;]]
+
+                    Description  :
+
+                    Convert markdown files (commonmark spec) into HTML files.
+                    When specified with no options build from the current directory into the
+                    default output directory [_output].
+
+
+                    Parameters  :
+
+                          &lt;file1.html&gt;          Convert one or multiple markdown files into html
+                                                  files (10 maximum).
+
+                    Options  :
+
+                      -i, --input-dir=&lt;input&gt;  Build from the specified directory.
+                          --jobs=&lt;jobs&gt;        Number max of job
+                      -o, --output-dir=&lt;output&gt; Store built file(s) to the specified directory.
+                      -r, --rebuild-all         Rebuild all the site.
+                      -w, --watch               Watch file changes and recompile if needed.
+                </code>
+            </pre>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+</html>

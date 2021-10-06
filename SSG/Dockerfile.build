@@ -1,0 +1,7 @@
+FROM openjdk:14-jdk-alpine
+RUN mkdir -p /home/gradle/.gradle
+ENV GRADLE_USER_HOME /home/gradle/.gradle
+WORKDIR /home/gradle/app-code/
+COPY . .
+RUN ./gradlew clean build -i --stacktrace
+RUN rm * -rf

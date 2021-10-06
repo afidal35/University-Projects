@@ -1,0 +1,10 @@
+<html>
+<head>
+    <title>{{ metadata.title }}</title>
+</head>
+<body>
+{%for key in metadata.table %}
+<li>{{key}}</li>
+{% endfor %}
+</body>
+</html>

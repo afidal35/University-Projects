@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        .title {
+            font-size: 80px;
+            font-weight: bold;
+            font-family: "Big Caslon";
+        }
+
+        li {
+            padding: 20px;
+
+        }
+
+        .sub {
+            padding-right: 10px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        i {
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+    <title>Documentation</title>
+</head>
+<body style="overflow-y: hidden">
+<div class="row" style="height: 100%">
+    <div class="col-3 col-md-3 text-white bg-dark">
+        <div class="text-white bg-dark p-3" style="">
+            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <span class="fs-4"><b>GLA Project Docs</b></span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link text-white ">
+                        Getting Started
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html" class="nav-link active text-white">
+                        Documentation &#x2193;
+                    </a>
+                    <ul class="nav nav-pills flex-column mb-auto" style="background-color: rgb(248,248,248)">
+                        <p class="text-dark ps-2">Templates :</p>
+                        <li class="sub">
+                            <a href="#var" class="nav-link text-dark">
+                                <u>Variables</u>
+                            </a>
+                        </li>
+                        <li class="sub">
+                            <a href="#include" class="nav-link text-dark">
+                                <u>Include</u>
+                            </a>
+                        </li>
+                        <li class="sub">
+                            <a href="#comment" class="nav-link text-dark">
+                                <u>Comments </u>
+                            </a>
+                        </li>
+                        <li class="sub">
+                            <a href="#condition" class="nav-link text-dark">
+                                <u>Conditions</u>
+                            </a>
+                        </li>
+                        <li class="sub">
+                            <a href="#loop" class="nav-link text-dark">
+                                <u>Loop</u>
+                            </a>
+                        </li>
+                        <li class="sub">
+                            <a href="#other" class="nav-link text-dark">
+                                <u>Others</u>
+                            </a>
+                        </li>
+                    </ul>
+
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">
+                        Examples
+                    </a>
+                </li>
+                <li>
+                    <a href="https://gitlab.com/SawHad/GLA-H" class="nav-link text-white">
+                        Source code
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <p class="p-3">Copyright 2021@GLA-H</p>
+        </div>
+    </div>
+    <div class="col-8" style=";overflow-y: auto;height: 100%;">
+        <div class="container me-5">
+            <h1 class="m-5 title">Documentation</h1>
+            The project has been realized with the <i style="color: red">jinjava</i> library which allows to manage
+            templates.
+            To benefit from this, your target folder will have to contain a folder with the name <i style="color: red">template </i>and
+            which will contain all the templates that will be used afterwards.
+            <pre>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;My Webpage&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;ul id="navigation"&gt;
+                        {% for item in navigation %}
+                            &lt;li&gt;&lt;a href="{{ item.href }}"&gt;{{ item.caption }}&lt;/a&gt;&lt;/li&gt;
+                        {% endfor %}
+                        &lt;/ul&gt;
+
+                        &lt;h1>My Webpage&lt;/h1&gt;
+                        {{ a_variable }}
+
+                        {# a comment #}
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </pre>
+            <h1 class="m-5" id="var">Variables</h1>
+            <hr>
+            <p>
+                You can specify variables by giving them values in the metadatas of your markdown files.
+                If the "template" variable is not specified, the default template will be used. Otherwise, the specified
+                template will be used.
+                The following example shows the content of the metadatas of a markdown file, the content of a template
+                file and the result after the build.
+            </p>
+            <h4>Metadata</h4>
+            <p> The metadatas of markdown files use the format <a href="https://fr.wikipedia.org/wiki/TOML">TOML</a></p>
+            .
+            <h5 class="ms-5">Special Metadata</h5>
+            <ul>
+                <li>
+                    <i>draft :</i> The draft variable is a boolean, when set it indicates that the markdown file if a
+                    draft file or not
+                </li>
+                <li>
+                    <i> template : </i> allows you to indicate the template file that will be chosen.
+                </li>
+            </ul>
+            <pre>
+                <code>
+                    +++
+                    title = "md title"
+                    date = 2021-03-06
+                    my_variable="Hello world"
+                    draft = false
+                    template = "file.html"
+                    +++
+                </code>
+            </pre>
+            <h4>Template file:</h4>
+            The variables are put in {{ ... }} and are preceded by the keyword metadata
+            : <i style="color: red">{{ metadata.variable_name }}</i>
+            <pre>
+                <code>
+                    &lt;h2&gt;{{ metadata.tile }}&lt;/h2&gt;
+                    &lt;h2&gt;{{ metadata.date }}&lt;/h2&gt;
+                    &lt;h2&gt;{{ metadata.my_variable }}&lt;/h2&gt;
+                </code>
+            </pre>
+            <h4>Result :</h4>
+            <pre>
+                <code>
+                    &lt;h2&gt;md title&lt;/h2&gt;
+                    &lt;h2&gt;2021-03-06&lt;/h2&gt;
+                    &lt;h2&gt;Hello world&lt;/h2&gt;
+                </code>
+            </pre>
+            Different types of variables are accepted like arrays and lists. You can consult the site <a
+                href="https://toml.io/en/">toml.io</a> for more details on variable types.
+            <h1 class="m-5" id="include">Include</h1>
+            <hr>
+            <p>
+                Your template file can also include other .html files thanks to the keyword <i style="color: red">include</i>
+                followed by the name of the file to include.
+            </p>
+            <h4>Template file:</h4>
+            <p>Example in a template file :</p>
+            <pre>
+                <code>
+                    &lt;h2&gt;{{ include header.html }}&lt;/h2&gt;
+                    &lt;h2&gt;{{ content }}&lt;/h2&gt;
+                    &lt;h2&gt;{{ include footer.html }}&lt;/h2&gt;
+                </code>
+            </pre>
+            <p>
+                This will replace the <i>header.html</i> and <i>footer.html</i> with the contents of their files.
+            </p>
+            <h1 class="m-5" id="comment">Comments</h1>
+            <hr>
+            <p>
+                The comments are put in the metadatas and are ignored during the build.
+                To put comments, just put a <i style="color:red;">#</i> first then write your comment.
+            </p>
+            <h4>Tamplate file</h4>
+            <pre>
+                <code>
+                    +++
+                    # this is a comment
+                    title = "md title"
+                    date = 2021-03-06
+                    my_variable="Hello world"
+                    +++
+                </code>
+            </pre>
+
+            <h1 class="m-5" id="condition">Conditions</h1>
+            <hr>
+            <p>
+                It is also possible to test variables with expressions. These tests return a boolean value.
+                the test conditions are put between <i style="color: red">{% ... %} .</i>
+            </p>
+            <h4>Tamplate file</h4>
+            <pre>
+                <code>
+                  &lt;h1&gt;{{ metadata.title }}&lt;/h1&gt;
+                    &lt;h1&gt;
+                        {% if metadata.secretnumber==16 %}
+                            Secret number is 16
+                        {% elif metadata.secretnumber==8 %}
+                            Secret number is 8
+                        {% elif metadata.secretnumber==9%}
+                            Secret number is 9
+                        {% else %}
+                        Fails !
+                        {% endif %}
+                    &lt;/h1&gt;
+                </code>
+            </pre>
+
+
+            <h1 class="m-5" id="loop">Loop</h1>
+            <hr>
+            <p>
+                If a variable is of type array or list, we can iterate on it with the keywords <i
+                    style="color: red">for</i> and <i style="color: red">In</i> in particular.
+                Just like test conditions, loops are also performed in {% ... %}. Equivalent to endif, endfor designates
+                the end of the loop.
+            <pre>
+                    <code>
+                        {% for key in metadata.my_list_variable %}
+                                ... do something with the key
+                         {% endfor%}
+                    </code>
+                </pre>
+            </p>
+            A practical example using a double loop:
+            <h4>Metadata</h4>
+            <pre>
+                <code>
+                    +++
+                    date = 2021-03-06
+                    var1 = ["hello","world"]
+                    var2 = [287,76,378,625]
+                    +++
+                </code>
+            </pre>
+            <h4>Tamplate file</h4>
+            <pre>
+                <code>
+                    &lt;h2&gt;{{ metadata.date }}&lt;/h2&gt;
+                    {% for item in metadata.var1 %}
+                        &lt;li&gt; {{ item }}&lt;/li&gt;
+                        {% for second_item in metadata.var2 %}
+                            &lt;li&gt; {{ second_item }}&lt;/li&gt;
+                        {% endfor %}
+                    {% endfor %}
+                </code>
+            </pre>
+            <h4>Result: </h4>
+            <pre>
+                <code>
+                    &lt;h2&gt;2021-03-06&lt;/h2&gt;
+                    &lt;li&gt; hello&lt;/li&gt;
+                    &lt;li&gt; 287&lt;/li&gt;
+                    &lt;li&gt; 76&lt;/li&gt;
+                    &lt;li&gt;378&lt;/li&gt;
+                    &lt;li&gt; 625&lt;/li&gt;
+                    &lt;li&gt; world&lt;/li&gt;
+                    &lt;li&gt;287&lt;/li&gt;
+                    &lt;li&gt;76&lt;/li&gt;
+                    &lt;li&gt; 378&lt;/li&gt;
+                    &lt;li&gt;625&lt;/li&gt;
+
+                </code>
+            </pre>
+            <h1 class="m-5" id="other">Others</h1>
+            <p class="mb-5">
+                For more options at the level of the templates, we invite you to consult the documentation of jinjava <a
+                    href="https://github.com/HubSpot/jinjava">here</a>.
+            </p>
+        </div>
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
