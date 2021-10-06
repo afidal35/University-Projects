@@ -1,0 +1,10 @@
+* members
+** Féaux De Lacroix, Martin, martinfeaux@gmail.Com
+** Fidalgo, Alex,
+
+* 3/11/2020
+** RDV avec Alex FIDALGO mardi 10 
+
+
+* 11/2020-12/2020
+** Jalon 1, jalon 2, test du capteur sur différentes couleurs (papier), analyze des données et algorithm temporaire de reconnaissance de couleurs.
