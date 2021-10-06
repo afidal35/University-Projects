@@ -13,7 +13,7 @@ This repository contains some of my university projects. (*Université de Paris*
 ### 1st semester
 
  * ![Flap](https://github.com/afidal35/University-Projects/tree/main/Flap) - Programming language : **OCaml** -  
- * ![PIDLineFollower](https://github.com/afidal35/University-Projects/tree/main/PIDLineFollower) - Programming language : **Python** <img align="left"      alt="Python" width="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"/> -
+ * ![PIDLineFollower](https://github.com/afidal35/University-Projects/tree/main/PIDLineFollower) - Programming language : **Python** <img style="float: right;"      alt="Python" width="20px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png"/> -
  * ![RssFluxLoader](https://github.com/afidal35/University-Projects/tree/main/RssFluxLoader) - Programming language : **Kotlin** -
 
 ### 2nd semester
