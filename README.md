@@ -12,9 +12,9 @@ This repository contains some of my university projects. (*Université de Paris*
 
 ### 1st semester
 
- * ![Flap](https://github.com/afidal35/University-Projects/tree/main/Flap) 
-  - Programming language : **OCAML** <img width=“50” height="50" src=“https://andrewshitov.com/wp-content/uploads/2019/12/OCaml.png”>
-  
+<img width=“50” height="50" src=“https://andrewshitov.com/wp-content/uploads/2019/12/OCaml.png”>
+
+ * ![Flap](https://github.com/afidal35/University-Projects/tree/main/Flap) - Programming language : **OCAML** -  
  * ![PIDLineFollower](https://github.com/afidal35/University-Projects/tree/main/PIDLineFollower) - Programming language : **OCAML** -
  * ![RssFluxLoader](https://github.com/afidal35/University-Projects/tree/main/RssFluxLoader) - Programming language : **OCAML** -
 
