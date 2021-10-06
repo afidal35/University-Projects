@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Android RSS Project</string>
+    <string name="welcome">Bienvenue sur notre projet Android!</string>
+    <string name="add_new_flux">Ajouter Flux</string>
+    <string name="browse_download_flux">Télécharger Flux</string>
+    <string name="select_flux_to_download">Veuillez sélectionner le(s) flux que vous souhaitez télécharger :</string>
+    <string name="downloadFlux">Télécharger le(s) flux choisi(s)</string>
+    <string name="select_infos_to_delete">Veuillez sélectionner les informations que vous souhaitez supprimer</string>
+    <string name="deleteInfo">Supprimer</string>
+    <string name="browse_info">Consulter Infos</string>
+    <string name="Titre">Titre</string>
+    <string name="Description">Description</string>
+    <string name="Lien">Lien</string>
+    <string name="Ajouter">ajouter</string>
+    <string name="criteres_affichages">Séléctionner les critères d\'affichages pour consulter les infos</string>
+    <string name="checkBoxInfoAll">Toutes les informations disponilbles</string>
+    <string name="checkBoxInfoNew">Les nouvelles informations seulement</string>
+    <string name="checkBoxInfoByNameTitle">Rechercher à partir d\'un titre</string>
+    <string name="checkBoxInfoByNameDescription">Rechercher à partir d\'une description</string>
+    <string name="showResultCritere">Afficher les résultats</string>
+    <string name="orCritereAfficher">OU</string>
+    <string name="ajouter_flux">Ajouter flux</string>
+    <string name="t_l_charger_flux">Télécharger flux</string>
+    <string name="consulter_info">Consulter info</string>
+</resources>

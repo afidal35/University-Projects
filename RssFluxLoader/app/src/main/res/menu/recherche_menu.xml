@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item android:id="@+id/action_search"
+        android:title="@android:string/search_go"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom|withText"
+        app:actionViewClass="androidx.appcompat.widget.SearchView">
+    </item>
+
+    <item android:id="@+id/action_add_flux"
+        android:title="@string/ajouter_flux"
+        android:icon="@drawable/baseline_add_black_24dp"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_download_flux"
+        android:title="@string/t_l_charger_flux"
+        android:icon="@drawable/baseline_add_black_24dp"
+        app:showAsAction="never"
+        tools:ignore="DuplicateIds"/>
+
+    <item android:id="@+id/action_home"
+        android:title=""
+        android:icon="@drawable/home"
+        app:showAsAction="ifRoom"/>
+</menu>

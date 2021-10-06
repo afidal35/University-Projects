@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/consulter"
+        android:title="Infos"
+        android:icon="@drawable/baseline_input_black_24dp"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_add_flux"
+        android:title="@string/add_new_flux"
+        android:icon="@drawable/baseline_add_black_24dp"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_download_flux"
+        android:title="@string/t_l_charger_flux"
+        android:icon="@drawable/baseline_add_black_24dp"
+        app:showAsAction="never"
+        tools:ignore="DuplicateIds"/>
+
+</menu>
