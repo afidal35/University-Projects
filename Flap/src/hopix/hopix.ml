@@ -1,0 +1,54 @@
+(** The Hopix programming language. *)
+
+let name = "hopix"
+
+module AST = HopixAST
+
+type ast = HopixAST.t
+
+open Error
+
+let parse lexer_init input =
+  SyntacticAnalysis.process
+    ~lexer_init
+    ~lexer_fun:HopixLexer.token
+    ~parser_fun:(fun lexer lexbuf -> (try HopixParser.program lexer lexbuf 
+    with 
+      | HopixParser.Error -> 
+        error "parsing" (Position.cpos lexbuf) "Syntax error."
+      | Sys_error msg ->
+        Error.global_error "during parsing" msg
+    ))
+    ~input
+
+let parse_filename filename =
+  if Options.get_use_sexp_in () then
+    ExtStd.Stdlib.file_content filename
+    |> Sexplib.Sexp.of_string
+    |> HopixAST.program_of_sexp
+  else
+    parse Lexing.from_channel (open_in filename)
+
+let extension =
+  ".hopix"
+
+let executable_format =
+  false
+
+let parse_string =
+  parse Lexing.from_string
+
+let print_ast ast =
+  if Options.get_use_sexp_out () then
+    HopixAST.sexp_of_program ast |> Sexplib.Sexp.to_string
+  else
+    HopixPrettyPrinter.(to_string program ast)
+
+let print_expression e =
+  HopixPrettyPrinter.(to_string expression e)
+
+include HopixInterpreter
+
+include HopixTypechecker
+
+include HopixParser
