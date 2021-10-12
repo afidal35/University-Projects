@@ -2,7 +2,7 @@
 
 This repository contains some of my university projects. (*Université de Paris*)
 
-## 3rd year of Licence
+## 3rd year of Licence (To complete)
 
 * ![]()
 * ![]()
